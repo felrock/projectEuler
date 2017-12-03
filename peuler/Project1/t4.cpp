@@ -3,13 +3,13 @@
 
 /*
 
-A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+a palindromic number reads the same both ways. the largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 
-Find the largest palindrome made from the product of two 3-digit numbers.
+find the largest palindrome made from the product of two 3-digit numbers.
 
 */
 
-bool isPanlindrome(std::string a);
+bool ispanlindrome(std::string a);
 bool three_number_products(int num);
 
 int main(int argc, char** argv)
@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 	while (!palindrome_found)
 	{
 		std::string s = std::to_string(max_num);
-		if (isPanlindrome(s))
+		if (ispanlindrome(s))
 		{
 			if (three_number_products(max_num)) {
 				palindrome_found = true;
@@ -31,7 +31,7 @@ int main(int argc, char** argv)
 	return 0;
 }
 
-bool isPanlindrome(std::string a)
+bool ispanlindrome(std::string a)
 {
 	int last_index = a.size() - 1;
 	for (int i = 0; i < a.size()/2; i++) {
