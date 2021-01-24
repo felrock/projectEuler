@@ -31,7 +31,7 @@ std::vector<int> getValues(std::string line)
 
 int main(int argc, char** argv)
 {
-  std::fstream file("problem18.txt");
+  std::fstream file("problem67.txt");
   std::string line;
   std::vector<std::vector<int>> triangle;
   int width = 1;
