@@ -1,12 +1,9 @@
 #include <iostream>
-#include <vector>
-#include <string>
 
 #define SPIRAL_SIZE 1001
 
 int main(int argc, char** argv)
 {
-   int steps = 2;
    int number = 1;
    int sum= 1;
 
@@ -14,10 +11,9 @@ int main(int argc, char** argv)
    {
       for (int j=0; j < 4; ++j)
       {
-         number += steps;
+         number += (i+1)*2;
          sum += number;
       }
-      steps += 2;
    }
    std::cout << "Sum of spiral diagonal: " << sum << std::endl;
 
